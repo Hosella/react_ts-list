@@ -1,0 +1,38 @@
+.App {
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  flex-direction: column;
+
+  &__part {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__add {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  &__reset {
+    align-self: stretch;
+  }
+}
+
+.App button {
+  background-color: aquamarine;
+  border: 1px solid cadetblue;
+  border-radius: 8px;
+}
+
+.App .active {
+  background-color: cadetblue;
+}

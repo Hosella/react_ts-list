@@ -1,0 +1,30 @@
+.item-enter-active {
+  animation: item-in 500ms forwards;
+}
+
+.item-exit-active {
+  opacity: 0;
+  animation: item-out 500ms forwards;
+}
+
+@keyframes item-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes item-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
